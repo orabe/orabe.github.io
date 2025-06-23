@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Orabe | Ventures</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="has-sidebar">
+  <div class="container">
+    <header class="page-header">
+      <nav>
+        <div class="nav-links-group">
+          <a href="../index.html">Home</a>
+          <a href="CV.html">CV</a>
+          <a href="tutorials.html">Tutorials</a>
+          <a href="courses.html">Courses</a>
+          <a href="publications.html">Publications</a>
+          <a href="ventures.html" class="active">Ventures</a>
+        </div>
+      </nav>
+    </header>
+
+    <aside class="sidebar">
+      <img src="../assets/images/profile-image.jpeg" alt="Mohammad Orabe" class="profile-image">
+      <ul class="social-links" style="display: flex; justify-content: center; padding: 0; margin: 16px 0;">
+        <li style="list-style: none;"><a href="mailto:orabe.mhd@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+        <li style="list-style: none;"><a href="https://github.com/orabe" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+        <li style="list-style: none;"><a href="https://linkedin.com/in/mohammad-orabe" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li style="list-style: none;"><a href="https://orcid.org/my-orcid?orcid=0009-0004-7177-799X" target="_blank" rel="noopener noreferrer" aria-label="ORCID"><i class="fa-brands fa-orcid"></i></a></li>
+      </ul>
+      <hr class="sidebar-divider">
+    </aside>
+
+    <main>
+      <div class="main-content">
+        <section id="ventures-content">
+          <h2>Ventures</h2>          
+          <article id="venture-MathCodeLab">
+            <h3><a href="http://www.MathCodeLab.de" target="_blank" rel="noopener noreferrer">MathCodeLab – Teaching Platform<i class="fa-solid fa-globe"></i></a></h3>
+            <p class="entry-details">Founder & Lead Instructor</p>
+            <p class="entry-details">Einzelunternehmen</p>
+            <p class="entry-details">Aug 2023 – Present | Germany</p>
+            <div class="article-body">
+              <div class="institution-logo">
+                <img src="../assets/images/mathcodelab.png" alt="MathCodeLab Logo">
+              </div>
+              <div class="description-content">
+                <p>Founded and manage an in-person and online platform offering Mathematics and Computer Science courses, with a focus on programming for undergraduates. Built a Telegram community of 240+ students across Germany and delivered 10 courses, teaching 50+ students so far.</p>
+                <div class="related-links">
+                  <a href="courses.html"><i class="fa-solid fa-chalkboard-user"></i>Related Courses</a>
+                </div>
+                <div class="tag-container">
+                  <span class="tag">Education</span>
+                  <span class="tag">Entrepreneurship</span>
+                  <span class="tag">STEM</span>
+                  <span class="tag">Programming</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="venture-drinkrack">
+            <h3><a href="#" target="_blank" rel="noopener noreferrer">DrinkRack – Refreshment solution for workplace<i class="fa-solid fa-globe"></i></a></h3>
+            <p class="entry-details">Founder & Director</p>
+            <p class="entry-details">Einzelunternehmen</p>
+            <p class="entry-details">2024 – Present | Berlin</p>
+            <div class="article-body">
+              <div class="institution-logo">
+                <img src="../assets/images/drinkrack-removebg.png" alt="DrinkRack Logo">
+              </div>
+              <div class="description-content">
+                <p>Founded and manage a hassle-free beverage rack service for companies and offices in Berlin.</p>
+                <div class="tag-container">
+                  <span class="tag">Logistics</span>
+                  <span class="tag">B2B Service</span>
+                  <span class="tag">Entrepreneurship</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="venture-boholismus">
+            <h3><a href="#" target="_blank" rel="noopener noreferrer">Boholismus – Event Planning & Design<i class="fa-solid fa-globe"></i></a></h3>
+            <p class="entry-details">Co-Founder & Director</p>
+            <p class="entry-details">Einzelunternehmen</p>
+            <p class="entry-details">2022 – Present | Berlin</p>
+            <div class="article-body">
+              <div class="institution-logo">
+                <img src="../assets/images/boholismus-logo.png" alt="Boholismus Logo">
+              </div>
+              <div class="description-content">
+                <p>Co-founded an event planning and rental service specializing in creating unique experiences with a blend of Bohemian and minimalist aesthetics. Services include decor design, floral arrangements, and beverage services for various private events.</p>
+                <div class="tag-container">
+                  <span class="tag">Event Management</span>
+                  <span class="tag">Design</span>
+                  <span class="tag">Entrepreneurship</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mohammad Orabe</p>
+    </footer>
+    
+    <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // --- Scroll to Top Button ---
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+        if (scrollTopBtn) {
+          // Show or hide the button based on scroll position
+          const toggleBtnVisibility = () => {
+            if (window.scrollY > 300) {
+              scrollTopBtn.style.display = 'block';
+            } else {
+              scrollTopBtn.style.display = 'none';
+            }
+          };
+
+          // Scroll to the top of the page
+          const goToTop = () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          };
+
+          window.addEventListener('scroll', toggleBtnVisibility);
+          scrollTopBtn.addEventListener('click', goToTop);
+        }
+      });
+    </script>
+
+  </div>
+</body>
+</html>

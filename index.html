@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Orabe | Home</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="has-sidebar">
+  <div class="container">
+    <header class="page-header">
+      <nav>
+        <div class="nav-links-group">
+          <a href="index.html" class="active">Home</a>
+          <a href="pages/CV.html">CV</a>
+          <a href="pages/tutorials.html">Tutorials</a>
+          <a href="pages/courses.html">Courses</a>
+          <a href="pages/publications.html">Publications</a>
+          <a href="pages/ventures.html">Ventures</a>
+        </div>
+      </nav>
+    </header>
+
+    <aside class="sidebar">
+      <!-- Profile Image and Contact Info -->
+      <img src="../assets/images/profile-image.jpeg" alt="Mohammad Orabe" class="profile-image">
+      <ul class="social-links">
+        <li>
+            <a href="https://orcid.org/my-orcid?orcid=0009-0004-7177-799X" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i>orabe.mhd@gmail.com</a>
+        </li>    
+        <li>
+            <a href="https://orcid.org/my-orcid?orcid=0009-0004-7177-799X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i>0009-0004-7177-799X</a>
+        </li>
+        <li>
+            <a href="https://github.com/orabe" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>orabe</a>
+        </li>
+        <li>
+            <a href=https://www.linkedin.com/in/mohammad-orabe-b2b9a5150/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>mohammad-orabe</a>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <div class="main-content">
+        <section id="about-me">
+          <h2>About Me</h2>
+          <p>
+            I am a Computer Science Master's student at the Technical University of Berlin, specializing in the application of machine learning and advanced signal processing to biomedical data. My primary focus is on neuroimaging and understanding brain dynamics through computational methods.
+          </p>
+          <p>
+            Currently, as a Research Assistant at the Brain and Data Science Group at Charité – Universitätsmedizin Berlin, I am contributing to the MNE-Python toolbox and developing well-calibrated inverse methods for M/EEG source modeling. My Master's thesis, supervised by Prof. Stefan Haufe, involves investigating subthalamic LFPs as a potential biomarker for adaptive deep brain stimulation in Parkinson's disease patients.
+          </p>
+          <p>
+            Beyond my research, I am passionate about education and community building. I founded and manage <a href="http://www.MathCodeLab.de" target="_blank" rel="noopener noreferrer">MathCodeLab</a>, a teaching platform that provides courses in Mathematics and Computer Science to undergraduate students. I am also an active contributor to open-source scientific software.
+          </p>
+          <p>
+            Feel free to check out my <a href="pages/CV.html">CV</a>, publications, and tutorials/courses, or contact me here.
+          </p>
+        </section>
+
+        <section id="interests">
+          <h2>Interests</h2>
+          <div class="tag-container">
+            <span class="tag">Machine Learning for Biomedical Data</span>
+            <span class="tag">Wearable Neurotechnology</span>
+            <span class="tag">EEG & ExG</span>
+            <span class="tag">Multivariate Time Series Analysis</span>
+            <span class="tag">Signal Processing</span>
+            <span class="tag">Neuroimaging</span>
+            <span class="tag">Brain Connectivity</span>
+            <span class="tag">Open-Source Software</span>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mohammad Orabe</p>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        if (scrollTopBtn) {
+          const toggleBtnVisibility = () => {
+            scrollTopBtn.style.display = (window.scrollY > 300) ? 'block' : 'none';
+          };
+          const goToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+          window.addEventListener('scroll', toggleBtnVisibility);
+          scrollTopBtn.addEventListener('click', goToTop);
+        }
+      });
+    </script>
+  </div>
+</body>
+</html>

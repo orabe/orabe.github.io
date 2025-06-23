@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Orabe | CV</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="has-sidebar">
+  <div class="container">
+    <header class="page-header">
+      <nav>
+        <div class="nav-links-group">
+          <a href="../index.html">Home</a>
+          <a href="CV.html" class="active">CV</a>
+          <a href="tutorials.html">Tutorials</a>
+          <a href="courses.html">Courses</a>
+          <a href="publications.html">Publications</a>
+          <a href="ventures.html">Ventures</a>
+        </div>
+      </nav>
+    </header>
+
+    <aside class="sidebar">
+      <img src="../assets/images/profile-image.jpeg" alt="Mohammad Orabe" class="profile-image">
+      <ul class="social-links" style="display: flex; justify-content: center; padding: 0; margin: 16px 0;">
+        <li style="list-style: none;"><a href="mailto:orabe.mhd@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+        <li style="list-style: none;"><a href="https://github.com/orabe" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+        <li style="list-style: none;"><a href="https://linkedin.com/in/mohammad-orabe" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li style="list-style: none;"><a href="https://orcid.org/my-orcid?orcid=0009-0004-7177-799X" target="_blank" rel="noopener noreferrer" aria-label="ORCID"><i class="fa-brands fa-orcid"></i></a></li>
+      </ul>
+      <hr class="sidebar-divider">
+      <ul id="toc-nav">
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work-experience">Work Experience</a></li>
+        <li><a href="#open-source">Open Source Softwares</a></li>
+        <li><a href="#selected-projects">Selected Projects</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#references">References</a></li>
+        <li><a href="#ventures">Ventures</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <div class="main-content">
+        <section id="education">
+          <h2>Education</h2>
+          <article>
+            <h3>M. Sc. in Computer Science</h3>
+            <p class="entry-details"><a href="https://www.tu.berlin/" target="_blank" rel="noopener noreferrer">Technical University (TU) Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details">2022 – Present</p>
+            <p class="entry-details"><em>Master Thesis (Ongoing):</em> Supervisor: Prof. Stefan Haufe</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/tu_berlin_logo.png" alt="TU Berlin Logo"></div>
+              <div class="description-content">
+                <p><strong>Thesis: Towards Closed-Loop Deep Brain Stimulation: A Deep Learning Approach for Real-Time Gait Classification in Parkinson's Disease</strong></p>
+                <p>In my thesis, I explore deep learning methods for real-time classification of gait states in Parkinson’s Disease using multimodal biosignals (LFP, EEG, EMG, IMU). The goal is to extract robust features and develop predictive biomarkers for integration into adaptive deep brain stimulation (DBS) systems, enabling patient-specific, frequency-based stimulation to improve clinical outcomes.</p>
+                <div class="related-links">
+                  <a href="#os-gaitmod"><i class="fa-solid fa-diagram-project"></i>Project: GaitMod</a>
+                  <a href="#pub-orabe-haufe"><i class="fa-solid fa-file-lines"></i>Publication</a>
+                </div>
+                <span class="toggle-arrow" role="button" tabindex="0" aria-expanded="false" aria-controls="edu-msc-extra" aria-label="Toggle coursework details">Relevant Coursework</span>
+                <div id="edu-msc-extra" class="extra-description" style="display: none;">
+                  <p>My studies provided a strong foundation in machine learning and neuroscience, including the following courses:</p>
+                  <ul>
+                        <li>Machine Intelligence I (6 ECTS)</li>
+                        <li>Machine Intelligence II (6 ECTS)</li>
+                        <li>Machine Learning in Medical Image Processing (9 ECTS)</li>
+                        <li>Models of Neural Systems (12 ECTS)</li>
+                        <li>Models of Higher Brain Functions (12 ECTS)</li>
+                        <li>Acquisition and Analysis of Neural Data (12 ECTS)</li>
+                        <li>Machine Learning Project with VAE (9 ECTS)</li>
+                        <li>Neural Information Processing Project (9 ECTS)</li>
+                        <li>Fundamentals of Electrical Engineering (9 ECTS)</li>
+                        <li>Machine Learning in Science and Industry (3 ECTS)</li>
+                        <li>Topics in Biomedical Data Science (3 ECTS)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>B. Sc. in Computer Science</h3>
+            <p class="entry-details"><a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Technical University (TU) Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details">2018 – 2021</p>
+            <p class="entry-details"><em>Bachelor Thesis:</em> Humboldt & Technical University Berlin | Supervisors: Prof. York Winter, Prof. Klaus Obermayer</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/tu_berlin_logo.png" alt="TU Berlin Logo"></div>
+              <div class="description-content">
+                <p><strong>Thesis: Markerless Pose Estimation and Mice Tracking with Deep Learning.</strong></p>
+                <p>Developed a deep learning pipeline for markerless pose estimation and tracking of multiple, interacting mice in long-term behavioral studies. The system integrated RFID sensor data to automatically correct identity swaps, ensuring robust tracking over 24-hour periods and achieving human-level accuracy.</p>
+                <div class="related-links"><a href="#os-gmt"><i class="fa-solid fa-diagram-project"></i>Project: GMT</a></div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section id="work-experience">
+          <h2>Work Experience</h2>
+          <article>
+            <h3>Research Assistant</h3>
+            <p class="entry-details">Quality in Artificial Intelligence Group | <a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Physikalisch-Technische Bundesanstalt (PTB)<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details">Feb 2025 – Present</p>
+            <p class="entry-details">Supervisor: Prof. Stefan Haufe</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/QAI_Brain_Data_gruen.png" alt="Quality in Artificial Intelligence Group Logo" style="margin-bottom: 20px;"><img src="../assets/images/ptb2.png" alt="PTB Logo"></div>
+              <div class="description-content">
+                <p><strong>Developing & Benchmarking Inverse Methods for M/EEG Source Imaging</strong></p>
+
+                <p>I designed and implemented a modular Python framework to systematically evaluate the uncertainty and calibration performance of brain source reconstruction algorithms. A core aspect of my role involves automating the entire experimental pipeline—from data simulation and forward modeling to evaluation and visualization. This work deepened my expertise in probabilistic modeling, signal processing, and scientific software engineering.</p>
+
+
+                <div class="related-links">
+                  <a href="#os-calibrain"><i class="fa-solid fa-diagram-project"></i>Project: CaliBrain</a>
+                  <a href="#pub-Ismail Huseynov-et-al"><i class="fa-solid fa-file-lines"></i>Publication</a>
+                </div>
+                <div class="tag-container"><span class="tag">Research</span><span class="tag">Machine Learning</span><span class="tag">Inverse Bayesian Methods</span><span class="tag">M/EEG</span><span class="tag">Brain Source Imaging</span><span class="tag">Uncertainty</span></div>
+
+                
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>Research Assistant</h3>
+            <p class="entry-details">Quality in Artificial Intelligence Group | <a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Charité – Universitätsmedizin Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details">Jan 2025 – Present</p>
+            <p class="entry-details">Supervisor: Prof. Stefan Haufe</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/QAI_Brain_Data_gruen.png" alt="Quality in Artificial Intelligence Group Logo" style="margin-bottom: 20px;"><img src="../assets/images/Logo_Charite.png" alt="Charite Logo"></div>
+              <div class="description-content">
+                <p><strong>Implementing Methods for Electrophysiological Data Analysis and Signal Processing</strong>
+                </p>My work involved contributing new multivariate brain connectivity methods to an open-source toolbox. This experience deepened my understanding of the principles of collaborative, open-source software development and advanced concepts in linear algebra and calculus.
+                </p>
+                <div class="related-links">
+                  <a href="#proj-mne"><i class="fa-solid fa-diagram-project"></i>Project: MNE Contribution</a>
+                  <a href="#pub-binns-et-al"><i class="fa-solid fa-file-lines"></i>Publication</a>
+                </div>
+                <div class="tag-container"><span class="tag">Python</span><span class="tag">MNE-Python</span><span class="tag">Signal Processing</span><span class="tag">Brain Connectivity</span><span class="tag">Multivariate Analysis</span><span class="tag">Open Source</span></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>Research Assistant</h3>
+            <p class="entry-details">Winter Lab | <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Humboldt University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details">Jul 2021 – Jun 2023</p>
+            <p class="entry-details">Supervisor: Prof. York Winter</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/hu_berlin_logo.png" alt="HU Berlin Logo"></div>
+              <div class="description-content">
+                <p><strong>Developing Toolboxes for Behavioral Data Analysis</strong></p>
+                <p>My role involved implementing and maintaining R and Python toolboxes for processing and analyzing large-scale behavioral data from RFID-tagged mice in automated home-cage environments. I created statistical analysis pipelines and data visualization tools to support research in behavioral neuroscience.</p>
+                <div class="related-links">
+                  <a href="#os-colonyrack"><i class="fa-solid fa-diagram-project"></i>Project: ColonyRack</a>
+                  <a href="#os-gmt"><i class="fa-solid fa-diagram-project"></i>Project: GMT</a>
+                  <a href="#os-deepmousetrack"><i class="fa-solid fa-diagram-project"></i>Project: DeepMouseTrack</a>
+                  <a href="#os-rfid-scale"><i class="fa-solid fa-diagram-project"></i>Project: RFID-Scale</a>
+                </div>
+                <div class="tag-container"><span class="tag">Python</span><span class="tag">R</span><span class="tag">Behavioral Neuroscience</span><span class="tag">Data Analysis</span><span class="tag">Data Visualization</span><span class="tag">Scientific Software</span></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>Research Assistant</h3>
+            <p class="entry-details">DAI Lab | <a href="https://dai-labor.de" target="_blank" rel="noopener noreferrer">Technical University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details">Jul 2020 – Oct 2020</p>
+            <p class="entry-details">Supervisor: Prof. Sahin Albayrak</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/dai-removebg.png" alt="DAI Lab TU Berlin Logo"></div>
+              <div class="description-content">
+                <p><strong>Hardware Development for eHealth & Agent Systems</strong></p>
+                <p>My work focused on the design and prototyping of electrical circuits for distributed eHealth systems.</p>
+                <div class="tag-container"><span class="tag">eHealth</span><span class="tag">Distributed Systems</span><span class="tag">Hardware</span></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>IT Support</h3>
+            <p class="entry-details">IIK | <a href="https://www.iik-berlin.de" target="_blank" rel="noopener noreferrer">Communication Institute Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details">Feb 2017 – Jul 2020</p>
+            <div class="article-body">
+              <div class="institution-logo">
+                <img src="../assets/images/iik-removebg.png" alt="IIK Berlin Logo">
+              </div>
+              <div class="description-content">
+                <p><strong>Technical Support & System Administration</strong></p>
+                <p>Managed the institute's computer labs, providing technical support to staff and students. My responsibilities included hardware and software installation, troubleshooting, and system maintenance to ensure the smooth operation of all IT infrastructure.</p>
+                <div class="tag-container">
+                  <span class="tag">IT Support</span>
+                  <span class="tag">Hardware</span>
+                  <span class="tag">Software</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section id="open-source">
+          <h2>Open Source Softwares</h2>
+          <article id="os-calibrain">
+            <h3><a href="https://github.com/braindatalab/CaliBrain" target="_blank" rel="noopener noreferrer">CaliBrain: Calibrated Brain Source Imaging<i class="fa-brands fa-github"></i></a></h3>
+            <p class="entry-details">Quality in Artificial Intelligence Group | <a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Physikalisch-Technische Bundesanstalt (PTB)<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details">Lead Developer (Python Toolbox)</p>
+            <p class="entry-details">Jun 2024 – Present (Ongoing)</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/caliBrain.png" alt="CaliBrain Logo"></div>
+              <div class="description-content">
+                <p>As lead developer, I designed and built CaliBrain, a Python toolbox for evaluating uncertainty and calibration in M/EEG source imaging. This library provides a framework for systematically benchmarking inverse solvers to promote well-calibrated source reconstruction methods.</p>
+                <div class="related-links">
+                    <a href="#pub-Ismail Huseynov-et-al"><i class="fa-solid fa-file-lines"></i>Publication (Ongoing)</a>                  
+                  <a href="https://calibrain.readthedocs.io/latest/"><i class="fa-solid fa-book"></i>Software Documentation</a>
+                </div>
+                <div class="tag-container"><span class="tag">Python</span><span class="tag">MNE-Python</span><span class="tag">EEG/MEG</span><span class="tag">Machine Learning</span><span class="tag">Source Imaging</span><span class="tag">Open Source</span></div>
+              </div>
+            </div>
+          </article>
+          <article id="os-gaitmod">
+            <h3><a href="https://github.com/orabe/gaitmod" target="_blank" rel="noopener noreferrer">GaitMod: A Toolbox for Gait Modulation Analysis<i class="fa-brands fa-github"></i></a></h3>
+            <p class="entry-details">Quality in Artificial Intelligence Group | <a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Physikalisch-Technische Bundesanstalt (PTB)<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details">Leade Developer (Python Toolbox)</p>
+            <p class="entry-details">Mai 2024 – Present (Ongoing)</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/gaitmod_logo.png" alt="GaitMod Logo"></div>
+              <div class="description-content">
+                <p>Developed as part of my Master's thesis, `GaitMod` is a Python package designed to analyze multimodal biosignals (LFP, EEG, EMG, IMU) using deep learning algorithms (e.g. LSTM) . The goal is to detect gait modulation in Parkinson's disease and identify biomarkers for adaptive deep brain stimulation (aDBS) for more personalized clinical applications.</p>
+
+                <div class="related-links">
+                  <a href="#pub-orabe-haufe"><i class="fa-solid fa-file-lines"></i>Publication (Ongoing)</a>
+                </div>
+                <div class="tag-container"><span class="tag">Python</span><span class="tag">Artifical Intelligence</span><span class="tag">Deep Learning</span><span class="tag">LSTM</span><span class="tag">Signal Processing</span><span class="tag">Parkinson</span><span class="tag">Biomarkers</span></div>
+              </div>
+            </div>
+          </article>
+          <article id="os-rfid-scale">
+            <h3><a href="https://github.com/WinterLab-Berlin/RfidScale" target="_blank" rel="noopener noreferrer">Mouse RFID-Scale<i class="fa-brands fa-github"></i></a></h3>
+            <p class="entry-details">Winter Lab | <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Humboldt University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details">Oct 2022 – Mar 2023</p>
+            <p class="entry-details">Lead Developer</p>            
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/RFID-Scale.png" alt="RFID Scale Project Logo"></div>
+              <div class="description-content">
+                <p>Developed an analysis pipeline to process and visualize weight data from an RFID-based scale system. The pipeline automate estimation of individual mouse weights, and generation of analytical plots.</p>
+                <div class="tag-container"><span class="tag">Python</span><span class="tag">RFID</span><span class="tag">Data Processing</span><span class="tag">Data Analysis</span><span class="tag">Scientific Software</span><span class="tag">Data Science</span></div>
+              </div>
+            </div>
+          </article>
+          <article id="os-colonyrack">
+            <h3><a href="https://github.com/WinterLab-Berlin/ColonyRack" target="_blank" rel="noopener noreferrer">ColonyRack Toolbox<i class="fa-brands fa-github"></i></a></h3>
+            <p class="entry-details">Winter Lab | <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Humboldt University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details">Jul 2021 – Oct 2022</p>
+            <p class="entry-details">Core Developer (Python Toolbox)</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/colonyrack.png" alt="ColonyRack Project Logo"></div>
+              <div class="description-content">
+                <p>Developed a framework in R to analyze and visualize complex behavioral data from an automated, large-scale mouse colony system. The toolbox processes continuous RFID tracking data to map social dynamics and movement patterns.</p>
+                <div class="tag-container"><span class="tag">R</span><span class="tag">Behavioral Neuroscience</span><span class="tag">Data Processing</span><span class="tag">Data Visualization</span><span class="tag">RFID</span><span class="tag">Scientific Software</span></div>
+              </div>
+            </div>
+          </article>
+          <article id="os-gmt">
+            <h3><a href="https://github.com/WinterLab-Berlin/GroupMouseTrack" target="_blank" rel="noopener noreferrer">GMT: Group Mouse Tracker Toolbox<i class="fa-brands fa-github"></i></a></h3>
+            <p class="entry-details">Winter Lab | <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Humboldt University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details">Dec 2021 – Oct 2022</p>
+            <p class="entry-details">Lead Developer (Python Toolbox)</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/GMT_trace.png" alt="GMT Project Logo"></div>
+              <div class="description-content">
+                <p>Developed a Python toolbox for markerless pose estimation, tracking, and identification of multiple, identical-looking mice. It provides an end-to-end deep learning solution, leveraging DeepLabCut with a ResNet-50 deep neural network (DNN) in TensorFlow. The system integrates with RFID sensors to automatically correct identity swaps, enabling robust, long-term behavioral analysis without manual intervention.</p>
+                <div class="tag-container"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Computer Vision</span><span class="tag">convolutional Neural Networks</span><span class="tag">Tracking</span><span class="tag">Machine Learing</span></div>
+              </div>
+            </div>
+          </article>
+          <article id="os-deepmousetrack">
+            <h3><a href="https://github.com/WinterLab-Berlin/DeepMouseTrack" target="_blank" rel="noopener noreferrer">DeepMouseTrack<i class="fa-brands fa-github"></i></a></h3>
+            <p class="entry-details">Winter Lab | <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Humboldt University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details">Dec 2021 – Oct 2022</p>
+            <p class="entry-details">Lead Developer</p>
+            <div class="article-body">
+              <div class="institution-logo">
+                <img src="../assets/images/DeepMouseTrack.png" alt="DeepMouseTrack Project Logo">
+              </div>
+              <div class="description-content">
+                <p>eveloped a Python pipeline for mouse pose estimation and tracking in a maze environment. This project implements an end-to-end solution using Deep Neural Networks (DNN).</p>
+                <div class="tag-container">
+                  <span class="tag">Python</span>
+                  <span class="tag">TensorFlow</span>
+                  <span class="tag">Pose Estimation</span>
+                  <span class="tag">Computer Vision</span>
+                  <span class="tag">convolutional Neural Networks</span>
+                  <span class="tag">Machine Learing</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section id="selected-projects">
+          <h2>Selected Projects</h2>
+          <article id="proj-mne">
+            <h3><a href="https://mne.tools/stable/index.html" target="_blank" rel="noopener noreferrer">Contribution to MNE-Python<i class="fa-brands fa-github"></i></a></h3>
+            <p class="entry-details">Contributor</p>
+            <p class="entry-details">Jun 2023 - Jun 2024</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/mne_logo.png" alt="MNE-Python Logo"></div>
+              <div class="description-content">
+                <p>Contributed to MNE-Python, a leading open-source toolbox for neurophysiological data analysis with over 4,000 scientific citations. My work focused on implementing advanced multivariate connectivity methods in the `mne-connectivity` module, enhancing the library's capabilities for complex signal processing.</p>
+                <div class="related-links">
+                  <a href="#pub-binns-et-al"><i class="fa-solid fa-file-lines"></i>Publication</a>
+                  <a href="https://mne.tools/mne-connectivity/dev/auto_examples/compare_coherency_methods.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-person-chalkboard"></i>View Tutorial 1</a>   
+                  <a href="https://mne.tools/mne-connectivity/dev/auto_examples/cacoh.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-person-chalkboard"></i>View Tutorial 2</a>                     
+                </div>
+                <div class="tag-container"><span class="tag">Open Source</span><span class="tag">MNE-Python</span><span class="tag">Brain Connectivity</span><span class="tag">Python</span></div>
+              </div>
+            </div>
+          </article>
+          <article id="proj-neurolib">
+            <h3><a href="https://github.com/neurolib-dev/neurolib" target="_blank" rel="noopener noreferrer">Contribution to Neurolib<i class="fa-brands fa-github"></i></a></h3>
+
+            <p class="entry-details">Neural Information Processing Group | <a href="https://www.tu.berlin/en/ni" target="_blank" rel="noopener noreferrer">Technical University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+
+            <p class="entry-details">Apr 2023 – Sep 2024</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/neurolib.png" alt="Neurolib Project Logo"></div>
+              <div class="description-content">
+                <p>Constructing a lead-field matrix corresponding to the AAL2 atlas and standard 10-20 EEG electrode configuration and contributing to the neurolib toolbox for whole-brain modeling.</p>
+                <div class="related-links">
+                  <a href="#pub-liu-et-al"><i class="fa-solid fa-file-lines"></i>Publication</a>
+                  <a href="https://github.com/neurolib-dev/neurolib/blob/master/examples/example-0.8-leadfield-matrix.ipynb" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-person-chalkboard"></i>View Tutorial</a>                     
+                </div>
+                <div class="tag-container"><span class="tag">Python</span><span class="tag">Matlab</span><span class="tag">Neuroscience</span><span class="tag">Whole-Brain Modeling</span><span class="tag">EEG</span></div>
+              </div>
+            </div>
+          </article>
+          <article id="proj-mri-seg">
+            <h3><a href="https://github.com/orabe/MRI_Segmentation_and_TumorClassification" target="_blank" rel="noopener noreferrer">MRI Image Segmentation & MGMT Detection<i class="fa-brands fa-github"></i></a></h3>
+            <p class="entry-details">Technical University Berlin & Charité</p>
+            <p class="entry-details">Oct 2023 – Mar 2024</p>
+            <p class="entry-details">University Project</p>
+            <div class="article-body">
+              <div class="institution-logo">
+                <img src="../assets/images/tu_berlin_logo.png" alt="Project Logo">
+              </div>
+              <div class="description-content">
+                <p>Utilized deep learning models (UNet and SegResNet) for MRI image segmentation of brain tumors. Implemented workflows to detect MGMT (a DNA repair enzyme) promoter methylation status from MRI images.</p>
+                <div class="tag-container">
+                    <span class="tag">Python</span>
+                  <span class="tag">Deep Learning</span>
+                  <span class="tag">UNet</span>
+                  <span class="tag">SegResNet</span>
+                  <span class="tag">MRI</span>
+                  <span class="tag">Image Segmentation</span>
+                  <span class="tag">Classification</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article id="proj-mvae">
+            <h3><a href="https://github.com/orabe/MVAE" target="_blank" rel="noopener noreferrer">Implementation of Multimodal VAE<i class="fa-brands fa-github"></i></a></h3>
+            <p class="entry-details">BIFOLD | Technical University Berlin</p>
+            <p class="entry-details">Oct 2023 – Apr 2024</p>
+            <p class="entry-details">University Project</p>
+            <div class="article-body">
+              <div class="institution-logo">
+                <img src="../assets/images/tu_berlin_logo.png" alt="Project Logo">
+              </div>
+              <div class="description-content">
+                <p>Implemented a Multimodal Variational Autoencoder (MVAE) to explore its ability to learn joint representations from multiple modalities to generate images conditioned on labels and vice versa.</p>
+                <div class="tag-container">
+                    <span class="tag">Python</span>
+                  <span class="tag">Deep Learning</span>
+                  <span class="tag">PyTorch</span>
+                  <span class="tag">Generative Models</span>
+                  <span class="tag">VAE</span>
+                  <span class="tag">LLM</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section id="teaching">
+          <h2>Teaching</h2>
+          <article>
+            <h3>Instructor for Undergraduate Courses</h3>
+            <p class="entry-details"><a href="http://www.MathCodeLab.de" target="_blank" rel="noopener noreferrer">MathCodeLab – Teaching Platform<i class="fa-solid fa-globe"></i></a></p>
+            <p class="entry-details">Aug 2023 – Present</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/mathcodelab.png" alt="mathcodelab Logo"></div>
+              <div class="description-content">
+                <p>As a founder and instructor I delivered 10+ courses in Mathematics and Computer Science, with a focus on programming for undergraduates. For more details, see the <a href="ventures.html">Ventures</a> or <a href="courses.html" target="_blank" rel="noopener noreferrer">Courses</a>.
+                    
+                For more details, see the <a href="ventures.html">Ventures</a> page or <a href="courses.html" target="_blank" rel="noopener noreferrer">Courses</a>.</p>    
+
+                <div class="tag-container"><span class="tag">Teaching</span><span class="tag">Mathematics</span><span class="tag">Computer Science</span><span class="tag">Programming</span><span class="tag">Python</span><span class="tag">Java</span></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>Topics in Biomedical Data Science</h3>
+            <p class="entry-details">Quality in Artificial Intelligence Group | <a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Technische Universität Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details">Winter Semester 2023/2024</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/tu_berlin_logo.png" alt="TU Berlin Logo"></div>
+              <div class="description-content">
+                <p>As a teaching assistant for this Master's level seminar, I mentored students on advanced topics at the intersection of machine learning and biomedical data analysis. My role involved guiding their literature review, presentation development, and fostering scientific discussion.</p>
+                <div class="related-links">
+                  <a href="https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html?nummer=41114&version=4" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i>View Course Details</a>
+                </div>
+                <div class="tag-container"><span class="tag">Teaching Assistant</span><span class="tag">Mentoring</span><span class="tag">Machine Learning</span><span class="tag">Biomedical Data</span><span class="tag">Deep Learning</span><span class="tag">Data Science</span></div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section id="publications">
+          <h2>Publications & Talks</h2>
+
+          <article id="pub-orabe-haufe">
+            <p><strong>Orabe, M.</strong>, & Haufe, S. (In Preparation). Detecting gait modulation with multimodal data (LFP, EEG, EMG, IMU) as a potential biomarker for clinical applications.</p>
+
+            <div class="related-links">
+              <a href="../assets/papers/Ismail Huseynov_et_al_preparation.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i>Publication In Preperation</a>                
+              <a href="#os-gaitmod"><i class="fa-solid fa-diagram-project"></i>Project: GaitMod</a>
+            </div>
+            <span class="toggle-arrow" role="button" tabindex="0" aria-expanded="false" aria-controls="pub-orabe-extra" aria-label="Toggle details">Read more</span>
+            <div id="pub-orabe-extra" class="extra-description" style="display: none;">
+              <p>This paper, based on my Master's thesis, details the development of a predictive biomarker from multimodal data for integration into implantable devices, aiming to enable frequency-based adaptive deep brain stimulation and improve patient outcomes.</p>
+            </div>
+          </article>
+
+          <article id="pub-Ismail Huseynov-et-al">
+            <p>Ismail Huseynov, I., <strong>Orabe, M.</strong>, Haufe, S., Nagarajan, S., & Hashemi, A. (In Preparation). Investigating the uncertainty estimation of inverse solvers in EEG/MEG brain source imaging.</p>
+            <div class="related-links">
+              <a href="../assets/papers/Ismail Huseynov_et_al_preparation.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i>Publication In Preperation</a>
+              <a href="#os-calibrain"><i class="fa-solid fa-diagram-project"></i>Related Project: CaliBrain</a>
+            </div>
+            <span class="toggle-arrow" role="button" tabindex="0" aria-expanded="false" aria-controls="pub-Ismail Huseynov-extra" aria-label="Toggle details">Read more</span>
+            <div id="pub-Ismail Huseynov-extra" class="extra-description" style="display: none;">
+              <p>This work investigates and benchmarks the performance of various Bayesian and frequentist inverse solvers for M/EEG source imaging, with a focus on the quality of their uncertainty estimates. The goal is to provide a framework for well-calibrated source reconstruction. Publication expected soon.</p>
+            </div>
+          </article>
+
+          <article id="pub-binns-et-al">
+            <p>Binns, T.S., <strong>Orabe, M.</strong>, Nguyen, T.D., Köhler, R.M., Pellegrini, F., & Haufe, S. (2024). Multivariate connectivity methods in the MNE-Python toolbox. Neural Traces, Berlin, Germany. (Software Poster)</p>
+
+            <div class="related-links">
+              <a href="../assets/papers/NeuralTraces_Conference-MNE_Poster_2024.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i>View Conference Poster</a>                
+              <a href="#proj-mne"><i class="fa-solid fa-diagram-project"></i>Related Project: MNE</a>
+              <a href="https://mne.tools/mne-connectivity/dev/auto_examples/compare_coherency_methods.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-person-chalkboard"></i>View Tutorial 1</a>   
+              <a href="https://mne.tools/mne-connectivity/dev/auto_examples/cacoh.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-person-chalkboard"></i>View Tutorial 2</a>                
+            </div>
+
+            <span class="toggle-arrow" role="button" tabindex="0" aria-expanded="false" aria-controls="pub-binns-extra" aria-label="Toggle details">Read more</span>
+            <div id="pub-binns-extra" class="extra-description" style="display: none;">
+              <p>This software poster was presented at the Neural Traces conference in Berlin, Germany, showcasing new multivariate connectivity features in the MNE-Python toolbox.</p>
+            </div>
+          </article>
+
+          <article id="pub-liu-et-al">
+            <p>Liu, Z., <strong>Orabe, M.</strong>, & Cakan, C. (2024). A Lead-Field Matrix for Neurolib - Framework for whole brain modelling.</p>
+
+            <div class="related-links">
+             <a href="assets/papers/LiedFiedMatrix_confernece-paper.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i>View Conference Paper</a>                
+              <a href="assets/papers/NI_project_poster_leadfield_matrix.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i>View Conference Poster</a>  
+              <a href="#os-neurolib"><i class="fa-solid fa-diagram-project"></i>Related Project: Neurolib</a>
+            </div>
+
+            <span class="toggle-arrow" role="button" tabindex="0" aria-expanded="false" aria-controls="pub-liu-extra" aria-label="Toggle details">Read more</span>
+            <div id="pub-liu-extra" class="extra-description" style="display: none;">
+              <p>This project involved constructing a lead-field matrix for the AAL2 atlas to be used within the neurolib framework for whole-brain modeling.</p>
+            </div>
+          </article>
+        </section>
+
+        <section id="references">
+          <h2>References</h2>
+          <p>Available upon request. Supervisors and collaborators include:</p>
+          <ul>
+            <li>Prof. Dr. Stefan Haufe</li>
+            <li>Prof. Dr. Srikantan Nagarajan</li>
+            <li>Dr. Ismail Huseynov</li>
+            <li>Dr. Ali Hashemi</li>
+          </ul>
+        </section>
+
+        <section id="ventures">
+          <h2>Ventures</h2>
+          <article>
+            <h3><a href="http://www.MathCodeLab.de" target="_blank" rel="noopener noreferrer">MathCodeLab – Teaching Platform<i class="fa-solid fa-globe"></i></a></h3>
+            <p class="entry-details">Founder & Lead Instructor</p>
+            <p class="entry-details">Einzelunternehmen</p>
+            <p class="entry-details">Aug 2023 – Present | Germany</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/mathcodelab.png" alt="MathCodeLab Logo"></div>
+              <div class="description-content">
+                <p>As the founder of MathCodeLab, I develope and deliver courses in Mathematics and Computer Science with a focus on programming for undergraduate students. The platform offers tailored online and in-person instruction to provide accessible, high-quality education in foundational STEM subjects.</p>
+
+                <p>To date, I have developed and delivered +10 courses to +50 students, building a supportive community of over +240 members across Germany. For more details, see the <a href="ventures.html">Ventures</a> page or <a href="courses.html" target="_blank" rel="noopener noreferrer">Courses</a>.</p>
+
+
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3><a href="#" target="_blank" rel="noopener noreferrer">DrinkRack – Refreshment solution for workplace<i class="fa-solid fa-globe"></i></a></h3>
+            <p class="entry-details">Founder & Director</p>
+            <p class="entry-details">Einzelunternehmen</p>
+            <p class="entry-details">2024 – Present | Berlin</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/drinkrack-removebg.png" alt="DrinkRack Logo"></div>
+              <div class="description-content">
+                <p>Founded and operate DrinkRack, a hassle-free beverage service for offices and companies. We provide a fully-stocked beverage rack at no upfront cost to the business, operating on a trust-based system where employees pay only for what they consume. Our service covers all setup and regular restocking.</p>
+
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3><a href="#" target="_blank" rel="noopener noreferrer">Boholismus – Event Planning & Design<i class="fa-solid fa-globe"></i></a></h3>
+            <p class="entry-details">Co-Founder & Director</p>
+            <p class="entry-details">Einzelunternehmen</p>
+            <p class="entry-details">2022 – Present | Berlin</p>
+            <div class="article-body">
+              <div class="institution-logo"><img src="../assets/images/boholismus-logo.png" alt="Boholismus Logo"></div>
+              <div class="description-content">
+                <p>Co-founded an event planning and rental service specializing in creating unique experiences with a blend of Bohemian and minimalist aesthetics. Services include decor design, floral arrangements, and beverage services for various private events.</p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mohammad Orabe</p>
+    </footer>
+    
+    <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // --- Toggle Arrow Functionality ---
+        const toggleArrows = document.querySelectorAll('.toggle-arrow');
+        toggleArrows.forEach(arrow => {
+          const initialContentId = arrow.getAttribute('aria-controls');
+          const initialContent = document.getElementById(initialContentId);
+          if (initialContent && initialContent.classList.contains('extra-description')) {
+            initialContent.style.display = 'none';
+            arrow.setAttribute('aria-expanded', 'false');
+          }
+          arrow.addEventListener('click', () => {
+            const contentId = arrow.getAttribute('aria-controls');
+            const content = document.getElementById(contentId);
+            const isExpanded = arrow.getAttribute('aria-expanded') === 'true';
+            if (content) {
+              content.style.display = isExpanded ? 'none' : 'block';
+              arrow.setAttribute('aria-expanded', !isExpanded);
+            }
+          });
+          arrow.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault();
+              arrow.click();
+            }
+          });
+        });
+
+        // --- Scrollspy & Highlight Logic ---
+        const sections = document.querySelectorAll('.main-content > section[id]');
+        const tocNav = document.getElementById('toc-nav');
+        if (tocNav) {
+          const tocLinks = tocNav.querySelectorAll('li a');
+          const sidebar = document.querySelector('.sidebar');
+          const onScroll = () => {
+            if (window.getComputedStyle(sidebar).position !== 'sticky') {
+              tocLinks.forEach(link => link.classList.remove('active'));
+              return;
+            }
+            let currentSectionId = '';
+            sections.forEach(section => {
+              if (window.scrollY >= section.offsetTop - 150) {
+                currentSectionId = section.getAttribute('id');
+              }
+            });
+            tocLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === `#${currentSectionId}`) {
+                link.classList.add('active');
+              }
+            });
+          };
+          window.addEventListener('scroll', onScroll);
+          onScroll();
+        }
+
+        document.querySelectorAll('.related-links a').forEach(link => {
+          link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              targetElement.classList.add('highlight');
+              setTimeout(() => targetElement.classList.remove('highlight'), 2500);
+            }
+          });
+        });
+
+        // --- Scroll to Top Button ---
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        if (scrollTopBtn) {
+          const toggleBtnVisibility = () => {
+            scrollTopBtn.style.display = (window.scrollY > 300) ? 'block' : 'none';
+          };
+          const goToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+          window.addEventListener('scroll', toggleBtnVisibility);
+          scrollTopBtn.addEventListener('click', goToTop);
+        }
+      });
+    </script>
+  </body>
+</html>
