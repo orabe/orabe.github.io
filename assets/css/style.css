@@ -664,3 +664,78 @@ body.sidebar-open .overlay {
   background-color: #333;
   transform: translateY(-3px);
 }
+
+
+/* ==========================================================================
+   8. Print Styles
+   ========================================================================== */
+@media print {
+  /* --- Basic Print Reset --- */
+  body {
+    font-size: 10pt; /* Use points for print consistency */
+    background-color: #fff;
+    color: #000;
+  }
+
+  /* --- Hide Web-Only Elements --- */
+  .sidebar,
+  .page-header,
+  footer,
+  #scrollTopBtn,
+  .toggle-arrow,
+  h2 > a i, h3 > a i, .entry-details > a i {
+    display: none !important;
+  }
+
+  /* --- Reset Layout for Full Page Width --- */
+  body.has-sidebar .container,
+  .container {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body.has-sidebar main {
+    padding-top: 0;
+  }
+
+  /* --- Remove Shadows and Borders --- */
+  .main-content > section,
+  .sidebar {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 1.5em;
+  }
+
+  /* --- Ensure All Content is Visible --- */
+  .extra-description {
+    display: block !important; /* Show all hidden coursework/details */
+  }
+
+  /* --- Style Links for Print --- */
+  a {
+    color: #000 !important;
+    text-decoration: none;
+  }
+
+  /* Show the full URL for external links */
+  .related-links a[href^="http"]::after,
+  .description-content a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #555;
+  }
+
+  /* --- Control Page Breaks for Readability --- */
+  h2 {
+    page-break-before: auto; /* Avoid starting a page with a section */
+    page-break-after: avoid; /* Keep heading with its content */
+  }
+
+  article,
+  .tag-container {
+    page-break-inside: avoid; /* Prevent articles from splitting across pages */
+  }
+}
