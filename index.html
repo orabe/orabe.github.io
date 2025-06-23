@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body class="has-sidebar">
+  <button id="sidebar-toggle" aria-label="Toggle sidebar" aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <div class="overlay"></div>  
   <div class="container">
     <header class="page-header">
       <nav>
@@ -24,6 +28,9 @@
     </header>
 
     <aside class="sidebar">
+      <button id="sidebar-close" aria-label="Close sidebar">
+        <i class="fa-solid fa-times"></i>
+      </button>
       <!-- Profile Image and Contact Info -->
       <img src="../assets/images/profile-image.jpeg" alt="Mohammad Orabe" class="profile-image">
       <ul class="social-links">
@@ -84,6 +91,24 @@
 
     <script>
       document.addEventListener('DOMContentLoaded', () => {
+        // --- Sidebar Toggle Logic ---
+        const sidebarToggle = document.getElementById('sidebar-toggle');
+        const sidebarClose = document.getElementById('sidebar-close');
+        const body = document.body;
+        const overlay = document.querySelector('.overlay');
+
+        if (sidebarToggle && overlay && sidebarClose) {
+          const toggleSidebar = () => {
+            const isSidebarOpen = body.classList.toggle('sidebar-open');
+            sidebarToggle.setAttribute('aria-expanded', isSidebarOpen);
+          };
+
+          sidebarToggle.addEventListener('click', toggleSidebar);
+          overlay.addEventListener('click', toggleSidebar);
+          sidebarClose.addEventListener('click', toggleSidebar);
+        }
+
+        // --- Existing Scroll-to-Top Logic ---
         const scrollTopBtn = document.getElementById('scrollTopBtn');
         if (scrollTopBtn) {
           const toggleBtnVisibility = () => {

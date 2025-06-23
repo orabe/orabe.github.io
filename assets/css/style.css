@@ -456,13 +456,90 @@ h2 > a:hover i, h3 > a:hover i, .entry-details > a:hover i {
   color: var(--accent);
 }
 
+/* --- Sidebar Close Button --- */
+#sidebar-close {
+  display: none; /* Hidden on desktop */
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.8em;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+#sidebar-close:hover {
+  color: var(--accent);
+}
+
+
 /* ==========================================================================
    7. Responsive Design
    ========================================================================== */
+/* --- Sidebar Toggle Button --- */
+#sidebar-toggle {
+  display: none; /* Hidden on desktop */
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1001;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* --- Overlay for Off-Canvas Sidebar --- */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+
+body.sidebar-open .overlay {
+  display: block;
+}
+
 @media (max-width: 1350px) {
+  /* Show the toggle button */
+  #sidebar-toggle {
+    display: block;
+  }
+
   /* Revert to a simple block layout on smaller screens */
   body.has-sidebar .container {
     display: block;
+  }
+
+    /* --- Convert sidebar to off-canvas menu --- */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    max-width: 85%;
+    margin-bottom: 0;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+  }
+  
+  body.sidebar-open .sidebar {
+    transform: translateX(0);
   }
 
   body.has-sidebar .page-header {
@@ -474,10 +551,15 @@ h2 > a:hover i, h3 > a:hover i, .entry-details > a:hover i {
     padding-top: 0; /* Reset padding */
   }
 
+
+  /* Show the close button and add padding to the sidebar */
+  #sidebar-close {
+    display: block;
+  }
+
+
   .sidebar {
-    position: static;
-    width: auto;
-    margin-bottom: 2em;
+    padding-top: 50px;
   }
 
   /* Revert nav tabs back to normal links */
@@ -546,5 +628,37 @@ h2 > a:hover i, h3 > a:hover i, .entry-details > a:hover i {
     flex-direction: column;
     gap: 0.5em;
     align-items: flex-start;
+  }
+
+  /* --- Mobile Typography & Layout Adjustments --- */
+  section h2 {
+    font-size: 1.6em;
+  }
+
+  article h3 {
+    font-size: 1.25em;
+  }
+
+  .main-content > section {
+    padding: 1.2em;
+  }
+
+  .article-body {
+    flex-direction: column;
+  }
+
+  .institution-logo {
+    margin: 0 0 1em 0; /* Adjust margin for vertical layout */
+    max-width: 70px;
+  }
+
+  .related-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+  }
+
+  .related-links a {
+    margin-right: 0;
   }
 }
