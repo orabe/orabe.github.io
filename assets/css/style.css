@@ -448,12 +448,12 @@ h2 > a, h3 > a, .entry-details > a {
 h2 > a i, h3 > a i, .entry-details > a i {
   margin-left: 0.5em;
   font-size: 0.85em;
-  color: #aaa;
+  color: var(--accent);
   transition: color 0.2s ease-in-out;
 }
 
 h2 > a:hover i, h3 > a:hover i, .entry-details > a:hover i {
-  color: var(--accent);
+  color: #333;
 }
 
 /* --- Sidebar Close Button --- */
