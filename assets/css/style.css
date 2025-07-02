@@ -71,6 +71,44 @@ footer {
   box-sizing: border-box;
 }
 
+/* Navigation Header (Mobile) */
+.nav-header {
+  display: none; /* Hidden on desktop */
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.nav-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 1em;
+  transition: color 0.2s ease-in-out;
+  padding: 0.25em;
+  min-width: 44px; /* Accessibility: minimum touch target size */
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-toggle:hover {
+  color: #333;
+}
+
+.nav-toggle i {
+  transition: transform 0.3s ease-in-out;
+}
+
 .nav-links-group {
   display: flex;
   gap: 1.5em;
@@ -328,6 +366,44 @@ body.has-sidebar .nav-links-group a + a {
   border-radius: 15px;
 }
 
+/* Sidebar Header (Mobile) */
+.sidebar-header {
+  display: none; /* Hidden on desktop */
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.sidebar-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 1em;
+  transition: color 0.2s ease-in-out;
+  padding: 0.25em;
+  min-width: 44px; /* Accessibility: minimum touch target size */
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-toggle:hover {
+  color: #333;
+}
+
+.sidebar-toggle i {
+  transition: transform 0.3s ease-in-out;
+}
+
 .sidebar h3 {
   margin-top: 0;
   color: var(--accent);
@@ -367,7 +443,12 @@ body.has-sidebar .nav-links-group a + a {
   width: 1.5em;
   text-align: center;
   margin-right: 0.6em;
-  color: #888;
+  color: var(--accent);
+  transition: color 0.2s ease-in-out;
+}
+
+.sidebar .social-links a:hover i {
+  color: #333;
 }
 
 /* --- Divider and TOC for CV Page --- */
@@ -436,7 +517,12 @@ body.has-sidebar .nav-links-group a + a {
   margin-right: 0.4em;
   width: 1.2em;
   text-align: center;
-  color: #888;
+  color: var(--accent);
+  transition: color 0.2s ease-in-out;
+}
+
+.related-links a:hover i {
+  color: #333;
 }
 
 /* --- Icon links for titles and institutions --- */
@@ -456,90 +542,14 @@ h2 > a:hover i, h3 > a:hover i, .entry-details > a:hover i {
   color: #333;
 }
 
-/* --- Sidebar Close Button --- */
-#sidebar-close {
-  display: none; /* Hidden on desktop */
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  background: none;
-  border: none;
-  font-size: 1.8em;
-  color: #888;
-  cursor: pointer;
-  transition: color 0.2s ease-in-out;
-}
-
-#sidebar-close:hover {
-  color: var(--accent);
-}
-
-
 /* ==========================================================================
    7. Responsive Design
    ========================================================================== */
-/* --- Sidebar Toggle Button --- */
-#sidebar-toggle {
-  display: none; /* Hidden on desktop */
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  z-index: 1001;
-  background: #fff;
-  border: 1px solid #e9ecef;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  font-size: 1.2em;
-  color: #333;
-}
-
-/* --- Overlay for Off-Canvas Sidebar --- */
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  z-index: 999;
-}
-
-body.sidebar-open .overlay {
-  display: block;
-}
 
 @media (max-width: 1350px) {
-  /* Show the toggle button */
-  #sidebar-toggle {
-    display: block;
-  }
-
   /* Revert to a simple block layout on smaller screens */
   body.has-sidebar .container {
     display: block;
-  }
-
-    /* --- Convert sidebar to off-canvas menu --- */
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 300px;
-    max-width: 85%;
-    margin-bottom: 0;
-    z-index: 1000;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-    overflow-y: auto;
-  }
-  
-  body.sidebar-open .sidebar {
-    transform: translateX(0);
   }
 
   body.has-sidebar .page-header {
@@ -551,15 +561,15 @@ body.sidebar-open .overlay {
     padding-top: 0; /* Reset padding */
   }
 
-
-  /* Show the close button and add padding to the sidebar */
-  #sidebar-close {
-    display: block;
-  }
-
-
+  /* Reset sidebar positioning for medium screens */
   .sidebar {
-    padding-top: 50px;
+    position: static !important;
+    transform: none;
+    width: auto;
+    height: auto;
+    z-index: auto;
+    overflow-y: visible;
+    margin-bottom: 2em;
   }
 
   /* Revert nav tabs back to normal links */
@@ -584,40 +594,15 @@ body.sidebar-open .overlay {
   }
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .container {
     margin-top: 2em;
     margin-bottom: 2em;
-    padding: 0 1em;
-  }
-
-  .page-header,
-  body.has-sidebar .page-header {
-    justify-content: flex-start;
-  }
-
-  body.has-sidebar .nav-links-group {
-    justify-content: flex-start;
-  }
-
-  .nav-links-group {
-    flex-direction: column;
-    gap: 0.5em;
-    align-items: flex-start;
-  }
-
-  /* --- Mobile Typography & Layout Adjustments --- */
-  section h2 {
-    font-size: 1.6em;
-  }
-
-  article h3 {
-    font-size: 1.25em;
+    padding: 0 1.5em;
   }
 
   .main-content > section {
-    padding: 1.2em;
+    padding: 1.5em;
   }
 
   .article-body {
@@ -625,18 +610,242 @@ body.sidebar-open .overlay {
   }
 
   .institution-logo {
-    margin: 0 0 1em 0; /* Adjust margin for vertical layout */
-    max-width: 70px;
+    margin: 0 0 1em 0;
+    max-width: 80px;
+    align-self: flex-start;
+  }
+
+  .nav-links-group {
+    gap: 1em;
+  }
+
+  .nav-links-group a {
+    font-size: 1em;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+    padding: 0 1em !important;
+    max-width: 100% !important;
+  }
+
+  .page-header,
+  body.has-sidebar .page-header {
+    justify-content: flex-start;
+    margin-bottom: 1em;
+  }
+
+  /* Ensure sidebar is not sticky/fixed on mobile - scrolls naturally */
+  .sidebar,
+  body.has-sidebar .sidebar {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: auto !important;
+    z-index: auto !important;
+    background-color: #fff !important;
+    border: 1px solid #e9ecef !important;
+    border-radius: 15px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+    grid-column: unset !important;
+    grid-row: unset !important;
+    margin-bottom: 1em !important;
+  }
+
+  /* Remove padding from body since nothing is fixed */
+  body.has-sidebar {
+    padding-top: 0 !important;
+  }
+
+  /* Show navigation header on mobile */
+  .nav-header {
+    display: flex !important;
+  }
+
+  /* Hide nav links by default on mobile */
+  .nav-links-group {
+    display: none;
+    flex-direction: column !important;
+    gap: 0.5em;
+    align-items: flex-start;
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid #e9ecef;
+  }
+
+  /* Show nav links when expanded */
+  .nav-links-group.expanded {
+    display: flex !important;
+  }
+
+  .nav-links-group a {
+    font-size: 1em !important;
+    padding: 0.5em 0;
+    width: 100%;
+  }
+
+  /* Mobile Navigation - normal positioning */
+  .page-header nav {
+    padding: 1em !important;
+  }
+
+  /* Show sidebar header on mobile */
+  .sidebar-header {
+    display: flex !important;
+  }
+
+  /* Hide sidebar content by default on mobile */
+  .sidebar-content {
+    display: none;
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid #e9ecef;
+  }
+
+  /* Show sidebar content when expanded */
+  .sidebar-content.expanded {
+    display: block !important;
+  }
+
+  /* --- Mobile Typography & Layout Adjustments --- */
+  section h2 {
+    font-size: 1.4em !important;
+    margin-top: 1em;
+    margin-bottom: 0.75em;
+  }
+
+  article h3 {
+    font-size: 1.15em !important;
+    margin-bottom: 0.5em;
+  }
+
+  .main-content > section {
+    padding: 1em !important;
+    margin-bottom: 1.5em;
+    border-radius: 10px;
+  }
+
+  .main-content > section ul {
+    font-size: 0.9em;
+    padding-left: 1.2em;
+  }
+
+  .main-content > section li {
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+  }
+
+  .article-body {
+    flex-direction: column;
+    margin-top: 0.5em;
+  }
+
+  .institution-logo {
+    margin: 0 0 0.75em 0;
+    max-width: 60px;
+    align-self: flex-start;
+  }
+
+  .description-content {
+    width: 100%;
+  }
+
+  .description-content h4 {
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .description-content p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 0.75em;
+  }
+
+  .entry-details {
+    font-size: 0.85em;
+    margin-bottom: 0.25em;
   }
 
   .related-links {
     display: flex;
     flex-direction: column;
-    gap: 0.75em;
+    gap: 0.5em;
+    margin-top: 0.75em;
+    font-size: 0.85em;
   }
 
   .related-links a {
     margin-right: 0;
+    padding: 0.25em 0;
+  }
+
+  .tag-container {
+    margin-top: 0.75em;
+    gap: 0.4em;
+  }
+
+  .tag {
+    font-size: 0.75em !important;
+    padding: 0.25em 0.5em;
+  }
+
+  /* Fix for toggle arrows on mobile */
+  .toggle-arrow {
+    font-size: 0.85em;
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
+  }
+
+  .extra-description {
+    padding-top: 0.5em;
+    font-size: 0.9em;
+  }
+
+  /* Sidebar improvements for mobile */
+  .sidebar {
+    padding: 1.25em !important;
+    margin-bottom: 2em !important;
+  }
+
+  /* Reset container margin to normal */
+  .container {
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+    padding: 0 1em !important;
+    max-width: 100% !important;
+  }
+
+  .sidebar .profile-image {
+    width: 60%;
+    margin-bottom: 1em;
+  }
+
+  /* Social links in sidebar - mobile improvements */
+  .sidebar .social-links a {
+    font-size: 0.85em;
+    padding: 0.6em 0.5em;
+    margin-bottom: 0.3em;
+    border-radius: 8px;
+  }
+
+  .sidebar .social-links a i {
+    font-size: 1.1em;
+    margin-right: 0.5em;
+  }
+
+  .sidebar .social-links li {
+    margin-bottom: 0.3em;
+  }
+
+  #toc-nav li a {
+    padding: 0.5em 0.75em;
+    font-size: 0.9em;
   }
 }
 
