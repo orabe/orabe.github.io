@@ -12,6 +12,12 @@
   <div class="container">
     <header class="page-header">
       <nav>
+        <div class="nav-header">
+          <span class="nav-title">Menu</span>
+          <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
         <div class="nav-links-group">
           <a href="../index.html">Home</a>
           <a href="cv.html">CV</a>
@@ -24,22 +30,30 @@
     </header>
 
     <aside class="sidebar">
-      <!-- Profile Image and Contact Info -->
-      <img src="../assets/images/profile-image.jpeg" alt="Mohammad Orabe" class="profile-image">
-      <ul class="social-links">
-        <li>
-            <a href="https://orcid.org/my-orcid?orcid=0009-0004-7177-799X" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i>m.orabe@icloud.com</a>
-        </li>    
-        <li>
-            <a href="https://orcid.org/my-orcid?orcid=0009-0004-7177-799X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i>0009-0004-7177-799X</a>
-        </li>
-        <li>
-            <a href="https://github.com/orabe" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>orabe</a>
-        </li>
-        <li>
-            <a href=https://www.linkedin.com/in/mohammad-orabe-b2b9a5150/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>mohammad-orabe</a>
-        </li>
-      </ul>
+      <div class="sidebar-header">
+        <span class="sidebar-title">Contact</span>
+        <button class="sidebar-toggle" aria-label="Toggle contact info" aria-expanded="false">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+      <div class="sidebar-content">
+        <!-- Profile Image and Contact Info -->
+        <img src="../assets/images/profile-image.jpeg" alt="Mohammad Orabe" class="profile-image">
+        <ul class="social-links">
+          <li>
+              <a href="mailto:m.orabe@icloud.com"><i class="fa-solid fa-envelope"></i>m.orabe@icloud.com</a>
+          </li>    
+          <li>
+              <a href="https://orcid.org/my-orcid?orcid=0009-0004-7177-799X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i>0009-0004-7177-799X</a>
+          </li>
+          <li>
+              <a href="https://github.com/orabe" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>orabe</a>
+          </li>
+          <li>
+              <a href="https://www.linkedin.com/in/mohammad-orabe-b2b9a5150/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>mohammad-orabe</a>
+          </li>
+        </ul>
+      </div>
     </aside>
 
     <main>
@@ -120,6 +134,38 @@
     <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
+        // --- Navigation Toggle Logic ---
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinksGroup = document.querySelector('.nav-links-group');
+        
+        if (navToggle && navLinksGroup) {
+          navToggle.addEventListener('click', () => {
+            const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', !isExpanded);
+            navLinksGroup.classList.toggle('expanded');
+            
+            // Rotate the chevron
+            const icon = navToggle.querySelector('i');
+            icon.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+          });
+        }
+
+        // --- Sidebar Toggle Logic ---
+        const sidebarToggle = document.querySelector('.sidebar-toggle');
+        const sidebarContent = document.querySelector('.sidebar-content');
+        
+        if (sidebarToggle && sidebarContent) {
+          sidebarToggle.addEventListener('click', () => {
+            const isExpanded = sidebarToggle.getAttribute('aria-expanded') === 'true';
+            sidebarToggle.setAttribute('aria-expanded', !isExpanded);
+            sidebarContent.classList.toggle('expanded');
+            
+            // Rotate the chevron
+            const icon = sidebarToggle.querySelector('i');
+            icon.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+          });
+        }
+
         // --- Scroll to Top Button ---
         const scrollTopBtn = document.getElementById('scrollTopBtn');
 
