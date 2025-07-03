@@ -4,16 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohammad Orabe | CV</title>
+  
+  <!-- Preconnect to external domains for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Prefetch critical navigation pages -->
+  <link rel="prefetch" href="../index.html">
+  <link rel="prefetch" href="tutorials.html">
+  <link rel="prefetch" href="courses.html">
+  <link rel="prefetch" href="publications.html">
+  <link rel="prefetch" href="ventures.html">
+  
+  <!-- Load critical CSS inline or with high priority -->
   <link rel="stylesheet" href="../assets/css/style.css" />
+  
+  <!-- Load fonts with optimized display -->
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Load Font Awesome with deferred loading -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 </head>
 <body class="has-sidebar">
   <div class="container">
     <header class="page-header">
       <nav>
         <div class="nav-header">
-          <span class="nav-title">Menu</span>
+          <span class="nav-title">MENU</span>
           <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
             <i class="fa-solid fa-chevron-down"></i>
           </button>
@@ -31,19 +50,19 @@
 
     <aside class="sidebar">
       <div class="sidebar-header">
-        <span class="sidebar-title">Contact</span>
+        <span class="sidebar-title">CONTACT</span>
         <button class="sidebar-toggle" aria-label="Toggle contact info" aria-expanded="false">
           <i class="fa-solid fa-chevron-down"></i>
         </button>
       </div>
       <div class="sidebar-content">
-        <img src="../assets/images/profile-image.jpeg" alt="Mohammad Orabe" class="profile-image">
+        <img src="../assets/images/profile-image.jpeg" alt="Mohammad Orabe" class="profile-image" fetchpriority="high">
         <ul class="social-links">
           <li>
               <a href="mailto:m.orabe@icloud.com"><i class="fa-solid fa-envelope"></i>m.orabe@icloud.com</a>
           </li>    
           <li>
-              <a href="https://orcid.org/my-orcid?orcid=0009-0004-7177-799X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i>0009-0004-7177-799X</a>
+              <a href="https://orcid.org/0009-0004-7177-799X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i>ORCID iD</a>
           </li>
           <li>
               <a href="https://github.com/orabe" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>orabe</a>
@@ -52,24 +71,34 @@
               <a href="https://www.linkedin.com/in/mohammad-orabe/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>mohammad-orabe</a>
           </li>
         </ul>
+        
         <hr class="sidebar-divider">
         <ul id="toc-nav">
-          <li><a href="#education">Education</a></li>
-          <li><a href="#work-experience">Work Experience</a></li>
-          <li><a href="#open-source">Open Source Softwares</a></li>
-          <li><a href="#selected-projects">Selected Projects</a></li>
-          <li><a href="#teaching">Teaching</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#references">References</a></li>
-          <li><a href="#ventures">Ventures</a></li>
+          <li><a href="#education">EDUCATION</a></li>
+          <li><a href="#work-experience">WORK EXPERIENCE</a></li>
+          <li><a href="#open-source">OPEN SOURCE SOFTWARES</a></li>
+          <li><a href="#selected-projects">SELECTED PROJECTS</a></li>
+          <li><a href="#teaching">TEACHING</a></li>
+          <li><a href="#publications">PUBLICATIONS</a></li>
+          <li><a href="#references">REFERENCES</a></li>
+          <li><a href="#ventures">VENTURES</a></li>
         </ul>
+
       </div>
     </aside>
 
     <main>
       <div class="main-content">
+          <div class="download-button-container">
+            <a href="../assets/papers/Mohammad_Orabe_CV.pdf" target="_blank" rel="noopener noreferrer" 
+               class="download-button">
+              <i class="fa-solid fa-download"></i>
+              View CV (PDF)
+            </a>
+          </div>
+
         <section id="education">
-          <h2>Education</h2>
+          <h2>EDUCATION</h2>
           <article>
             <h3>M. Sc. in Computer Science</h3>
             <p class="entry-details"><a href="https://www.tu.berlin/" target="_blank" rel="noopener noreferrer">Technical University (TU) Berlin<i class="fa-solid fa-building-columns"></i></a></p>
@@ -108,7 +137,7 @@
             <h3>B. Sc. in Computer Science</h3>
             <p class="entry-details"><a href="https://www.tu.berlin/" target="_blank" rel="noopener noreferrer">Technical University (TU)<i class="fa-solid fa-building-columns"></i></a></p>
             <p class="entry-details">2018 – 2021</p>
-            <p class="entry-details">Bachelor Thesis Supervisors: Prof. York Winter, Prof. Klaus Obermayer</p>
+            <p class="entry-details">Bachelor Thesis Supervisors: <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Prof. York Winter</a>, Prof. Klaus Obermayer</p>
             <div class="article-body">
               <div class="institution-logo"><img src="../assets/images/tu_berlin_logo.png" alt="TU Berlin Logo"></div>
               <div class="description-content">
@@ -121,14 +150,23 @@
         </section>
 
         <section id="work-experience">
-          <h2>Work Experience</h2>
+          <h2>WORK EXPERIENCE</h2>
           <article>
             <h3>Research Assistant</h3>
-            <p class="entry-details">Quality in Artificial Intelligence Group (QAI) | <a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Physikalisch-Technische Bundesanstalt (PTB)<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details"><a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Quality in Artificial Intelligence Group (QAI)<i class="fa-solid fa-users"></i></a> | <a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Physikalisch-Technische Bundesanstalt (PTB)<i class="fa-solid fa-building-columns"></i></a></p>
             <p class="entry-details">Feb 2025 – Present</p>
             <p class="entry-details">Supervisor: Prof. Stefan Haufe</p>
             <div class="article-body">
-              <div class="institution-logo"><img src="../assets/images/QAI_Brain_Data_gruen.png" alt="Quality in Artificial Intelligence Group (QAI) Logo" style="margin-bottom: 20px;"><img src="../assets/images/ptb2.png" alt="PTB Logo"></div>
+              <div class="institution-logos-container">
+                <div class="institution-logo">
+                  <img src="../assets/images/QAI_Brain_Data_gruen.png" alt="Quality in Artificial Intelligence Group (QAI) Logo">
+                </div>
+                <div class="institution-logo">
+                  <a href="https://www.ptb.de" target="_blank" rel="noopener noreferrer" aria-label="Visit PTB">
+                    <img src="../assets/images/ptb2.png" alt="PTB Logo">
+                  </a>
+                </div>
+              </div>
               <div class="description-content">
                 <p><strong>Developing & Benchmarking Inverse Methods for M/EEG Source Imaging</strong></p>
 
@@ -139,7 +177,7 @@
                   <a href="#os-calibrain"><i class="fa-solid fa-diagram-project"></i>Project: CaliBrain</a>
                   <a href="#pub-Ismail Huseynov-et-al"><i class="fa-solid fa-file-lines"></i>Publication</a>
                 </div>
-                <div class="tag-container"><span class="tag">Research</span><span class="tag">Machine Learning</span><span class="tag">Inverse Bayesian Methods</span><span class="tag">M/EEG</span><span class="tag">Brain Source Imaging</span><span class="tag">Uncertainty</span></div>
+                <div class="tag-container"><span class="tag">Uncertainty Estimation</span><span class="tag">Machine Learning</span><span class="tag">Inverse Bayesian Methods</span><span class="tag">M/EEG</span><span class="tag">Brain Source Imaging</span></div>
 
                 
               </div>
@@ -147,11 +185,20 @@
           </article>
           <article>
             <h3>Research Assistant</h3>
-            <p class="entry-details">Quality in Artificial Intelligence Group (QAI) | <a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Charité – Universitätsmedizin Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details"><a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Quality in Artificial Intelligence Group (QAI)<i class="fa-solid fa-users"></i></a> | <a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Charité – Universitätsmedizin Berlin<i class="fa-solid fa-building-columns"></i></a></p>
             <p class="entry-details">Jun 2023 – Dec 2024</p>
             <p class="entry-details">Supervisor: Prof. Stefan Haufe</p>
             <div class="article-body">
-              <div class="institution-logo"><img src="../assets/images/QAI_Brain_Data_gruen.png" alt="Quality in Artificial Intelligence Group (QAI) Logo" style="margin-bottom: 20px;"><img src="../assets/images/Logo_Charite.png" alt="Charite Logo"></div>
+              <div class="institution-logos-container">
+                <div class="institution-logo">
+                  <img src="../assets/images/QAI_Brain_Data_gruen.png" alt="Quality in Artificial Intelligence Group (QAI) Logo">
+                </div>
+                <div class="institution-logo">
+                  <a href="https://www.charite.de" target="_blank" rel="noopener noreferrer" aria-label="Visit Charité">
+                    <img src="../assets/images/Logo_Charite.png" alt="Charite Logo">
+                  </a>
+                </div>
+              </div>
               <div class="description-content">
                 <p><strong>Implementing Methods for Electrophysiological Data Analysis and Signal Processing</strong>
                 </p>My work involved contributing new multivariate brain connectivity methods to an open-source toolbox. This experience deepened my understanding of the principles of collaborative, open-source software development and advanced concepts in linear algebra and calculus.
@@ -166,11 +213,13 @@
           </article>
           <article>
             <h3>Research Assistant</h3>
-            <p class="entry-details">Winter Lab | <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Humboldt University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details"><a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Winter Lab<i class="fa-solid fa-users"></i></a> | <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Humboldt University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
             <p class="entry-details">Jul 2021 – Jun 2023</p>
             <p class="entry-details">Supervisor: Prof. York Winter</p>
             <div class="article-body">
-              <div class="institution-logo"><img src="../assets/images/hu_berlin_logo.png" alt="HU Berlin Logo"></div>
+              <div class="institution-logo">
+                <img src="../assets/images/hu_berlin_logo.png" alt="HU Berlin Logo">
+              </div>
               <div class="description-content">
                 <p><strong>Developing Toolboxes for Behavioral Data Analysis</strong></p>
                 <p>My role involved implementing and maintaining R and Python toolboxes for processing and analyzing large-scale behavioral data from RFID-tagged mice in automated home-cage environments. I created statistical analysis pipelines and data visualization tools to support research in behavioral neuroscience.</p>
@@ -220,13 +269,15 @@
         </section>
 
         <section id="open-source">
-          <h2>Open Source Softwares</h2>
+          <h2>OPEN SOURCE SOFTWARES</h2>
           <article id="os-calibrain">
             <h3><a href="https://github.com/braindatalab/CaliBrain" target="_blank" rel="noopener noreferrer">Lead Developer (Python Toolbox)<i class="fa-brands fa-github"></i></a></h3>
-            <p class="entry-details">Quality in Artificial Intelligence Group (QAI) | <a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Physikalisch-Technische Bundesanstalt (PTB)<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details"><a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Quality in Artificial Intelligence Group (QAI)<i class="fa-solid fa-users"></i></a> | <a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Physikalisch-Technische Bundesanstalt (PTB)<i class="fa-solid fa-building-columns"></i></a></p>
             <p class="entry-details">Jun 2024 – Present (Ongoing)</p>
             <div class="article-body">
-                <div class="institution-logo"><img src="../assets/images/caliBrain.png" alt="CaliBrain Logo"></div>
+                <div class="institution-logo">
+                  <img src="../assets/images/caliBrain.png" alt="CaliBrain Logo">
+                </div>
                 <div class="description-content">
                     <h4>CaliBrain: A Python Toolbox for Evaluating Uncertainty and Calibration in M/EEG Source Imaging</h4>
                     <p>As lead developer, I designed and built CaliBrain, a Python toolbox for evaluating uncertainty and calibration in M/EEG source imaging. This library provides a framework for systematically benchmarking inverse solvers to promote well-calibrated source reconstruction methods.</p>
@@ -240,10 +291,12 @@
           </article>
           <article id="os-gaitmod">
             <h3><a href="https://github.com/orabe/gaitmod" target="_blank" rel="noopener noreferrer">Lead Developer (Python Toolbox)<i class="fa-brands fa-github"></i></a></h3>
-            <p class="entry-details">Quality in Artificial Intelligence Group (QAI) | <a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Physikalisch-Technische Bundesanstalt (PTB)<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details"><a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Quality in Artificial Intelligence Group (QAI)<i class="fa-solid fa-users"></i></a> | <a href="https://qai-labs.org" target="_blank" rel="noopener noreferrer">Physikalisch-Technische Bundesanstalt (PTB)<i class="fa-solid fa-building-columns"></i></a></p>
             <p class="entry-details">Mai 2024 – Present (Ongoing)</p>
             <div class="article-body">
-              <div class="institution-logo"><img src="../assets/images/gaitmod_logo.png" alt="GaitMod Logo"></div>
+              <div class="institution-logo">
+                <img src="../assets/images/gaitmod_logo.png" alt="GaitMod Logo">
+              </div>
               <div class="description-content">
                 <h4>GaitMod: A Python Toolbox for Gait Modulation Analysis</h4>
                 <p>Developed as part of my Master's thesis, `GaitMod` is a Python package designed to analyze multimodal biosignals (LFP, EEG, EMG, IMU) using deep learning algorithms (e.g. LSTM) . The goal is to detect gait modulation in Parkinson's disease and identify biomarkers for adaptive deep brain stimulation (aDBS) for more personalized clinical applications.</p>
@@ -253,7 +306,7 @@
                   <a href="https://pypi.org/project/gaitmod/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-python"></i>PyPI Package</a>
                   <a href="https://gaitmod.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book"></i>Documentation</a>
                 </div>
-                <div class="tag-container"><span class="tag">Python</span><span class="tag">Artifical Intelligence</span><span class="tag">Deep Learning</span><span class="tag">LSTM</span><span class="tag">Signal Processing</span><span class="tag">Parkinson</span><span class="tag">Biomarkers</span></div>
+                <div class="tag-container"><span class="tag">Python</span><span class="tag">Artifical Intelligence</span><span class="tag">Deep Learning</span><span class="tag">LSTM</span><span class="tag">Signal Processing</span><span class="tag">Parkinson</span></div>
               </div>
 
 
@@ -261,10 +314,12 @@
           </article>
           <article id="os-colonyrack">
             <h3><a href="https://github.com/orabe/ColonyRack" target="_blank" rel="noopener noreferrer">Core Developer (R Toolbox)<i class="fa-brands fa-github"></i></a></h3>
-            <p class="entry-details">Winter Lab | <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Humboldt University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details"><a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Winter Lab<i class="fa-solid fa-users"></i></a> | <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Humboldt University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
             <p class="entry-details">Jul 2021 – Jun 2023</p>
             <div class="article-body">
-              <div class="institution-logo"><img src="../assets/images/colonyrack.png" alt="ColonyRack Project Logo"></div>
+              <div class="institution-logo">
+                <img src="../assets/images/colonyrack.png" alt="ColonyRack Project Logo">
+              </div>
               <div class="description-content">
                 <h4>ColonyRack: An R Toolbox for Mouse Colony Data Analysis</h4>
                 <p>Developed a framework in R to analyze and visualize complex behavioral data from an automated, large-scale mouse colony system. The toolbox processes continuous RFID tracking data to map social dynamics and movement patterns.</p>
@@ -274,7 +329,7 @@
           </article>          
           <article id="os-deepmousetrack">
             <h3><a href="https://github.com/orabe/DeepMouseTrack" target="_blank" rel="noopener noreferrer">Lead Developer (Python Framework)<i class="fa-brands fa-github"></i></a></h3>
-            <p class="entry-details">Winter Lab | <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Humboldt University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details"><a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Winter Lab<i class="fa-solid fa-users"></i></a> | <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Humboldt University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
             <p class="entry-details">Dec 2022 – Apr 2023</p>
             <div class="article-body">
               <div class="institution-logo">
@@ -296,10 +351,12 @@
           </article>    
           <article id="os-rfid-scale">
             <h3><a href="https://github.com/WinterLab-Berlin/RfidScale" target="_blank" rel="noopener noreferrer">Lead Developer (Python Framework)<i class="fa-brands fa-github"></i></a></h3>
-            <p class="entry-details">Winter Lab | <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Humboldt University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details"><a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Winter Lab<i class="fa-solid fa-users"></i></a> | <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Humboldt University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
             <p class="entry-details">Oct 2022 – Mar 2023</p>
             <div class="article-body">
-              <div class="institution-logo"><img src="../assets/images/RFID-Scale.png" alt="RFID Scale Project Logo"></div>
+              <div class="institution-logo">
+                <img src="../assets/images/RFID-Scale.png" alt="RFID Scale Project Logo">
+              </div>
               <div class="description-content">
                 <h4>RFID-Scale: A Python Framework for Mouse Weight Estimation</h4>
                 <p>Developed an analysis pipeline to process and visualize weight data from an RFID-based scale system. The pipeline automates estimation of individual mouse weights, and generation of analytical plots.</p>
@@ -309,10 +366,12 @@
           </article>                
           <article id="os-gmt">
             <h3><a href="https://github.com/WinterLab-Berlin/GroupMouseTrack" target="_blank" rel="noopener noreferrer">Lead Developer (Python Toolbox)<i class="fa-brands fa-github"></i></a></h3>
-            <p class="entry-details">Winter Lab | <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Humboldt University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
+            <p class="entry-details"><a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Winter Lab<i class="fa-solid fa-users"></i></a> | <a href="https://www.winterlab.org" target="_blank" rel="noopener noreferrer">Humboldt University Berlin<i class="fa-solid fa-building-columns"></i></a></p>
             <p class="entry-details">Dec 2021 – Oct 2022</p>
             <div class="article-body">
-              <div class="institution-logo"><img src="../assets/images/GMT_trace.png" alt="GMT Project Logo"></div>
+              <div class="institution-logo">
+                <img src="../assets/images/GMT_trace.png" alt="GMT Project Logo">
+              </div>
               <div class="description-content">
                 <h4>GroupMouseTrack: A Python Toolbox for Multiple Mouse Tracking</h4>
                 <p>Developed a Python toolbox for markerless pose estimation, tracking, and identification of multiple, identical-looking mice. It provides an end-to-end deep learning solution, leveraging DeepLabCut with a ResNet-50 deep neural network (DNN) in TensorFlow. The system integrates with RFID sensors to automatically correct identity swaps, enabling robust, long-term behavioral analysis without manual intervention.</p>
@@ -323,7 +382,7 @@
         </section>
 
         <section id="selected-projects">
-          <h2>Selected Projects</h2>
+          <h2>SELECTED PROJECTS</h2>
           <article id="proj-mne">
             <h3><a href="https://mne.tools/stable/index.html" target="_blank" rel="noopener noreferrer">Contribution to MNE-Python<i class="fa-brands fa-github"></i></a></h3>
             <p class="entry-details">Contributor</p>
@@ -407,7 +466,7 @@
         </section>
 
         <section id="teaching">
-          <h2>Teaching</h2>
+          <h2>TEACHING</h2>
           <article>
             <h3>Instructor for Undergraduate Courses</h3>
             <p class="entry-details"><a href="http://www.MathCodeLab.de" target="_blank" rel="noopener noreferrer">MathCodeLab – Teaching Platform<i class="fa-solid fa-globe"></i></a></p>
@@ -437,14 +496,14 @@
                 <div class="related-links">
                   <a href="https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html?nummer=41114&version=4" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i>View Course Details</a>
                 </div>
-                <div class="tag-container"><span class="tag">Teaching Assistant</span><span class="tag">Mentoring</span><span class="tag">Machine Learning</span><span class="tag">Biomedical Data</span><span class="tag">Deep Learning</span><span class="tag">Data Science</span></div>
+                <div class="tag-container"><span class="tag">Mentoring</span><span class="tag">Machine Learning</span><span class="tag">Biomedical Data</span><span class="tag">Deep Learning</span><span class="tag">Data Science</span></div>
               </div>
             </div>
           </article>
         </section>
 
         <section id="publications">
-          <h2>Publications & Talks</h2>
+          <h2>PUBLICATIONS & TALKS</h2>
 
           <article id="pub-orabe-haufe">
             <p><strong>Orabe, M.</strong>, & Haufe, S. (In Preparation). Detecting gait modulation with multimodal data (LFP, EEG, EMG, IMU) as a potential biomarker for clinical applications.</p>
@@ -504,7 +563,7 @@
         </section>
 
         <section id="references">
-          <h2>References</h2>
+          <h2>REFERENCES</h2>
           <p>Available upon request. Supervisors and collaborators include:</p>
           <ul>
             <li>Prof. Dr. Stefan Haufe</li>
@@ -515,7 +574,7 @@
         </section>
 
         <section id="ventures">
-          <h2>Ventures</h2>
+          <h2>VENTURES</h2>
           <article>
             <h3><a href="http://www.MathCodeLab.de" target="_blank" rel="noopener noreferrer">MathCodeLab – Teaching Platform<i class="fa-solid fa-globe"></i></a></h3>
             <p class="entry-details">Founder & Lead Instructor</p>
@@ -561,10 +620,6 @@
         </section>
       </div>
     </main>
-
-    <footer>
-      <p>&copy; 2025 Mohammad Orabe</p>
-    </footer>
     
     <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 

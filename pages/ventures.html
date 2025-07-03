@@ -4,16 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohammad Orabe | Ventures</title>
+  
+  <!-- Preconnect to external domains for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Load critical CSS inline or with high priority -->
   <link rel="stylesheet" href="../assets/css/style.css" />
+  
+  <!-- Load fonts with optimized display -->
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Load Font Awesome with deferred loading -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 </head>
 <body class="has-sidebar">
   <div class="container">
     <header class="page-header">
       <nav>
         <div class="nav-header">
-          <span class="nav-title">Menu</span>
+          <span class="nav-title">MENU</span>
           <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
             <i class="fa-solid fa-chevron-down"></i>
           </button>
@@ -31,7 +43,7 @@
 
     <aside class="sidebar">
       <div class="sidebar-header">
-        <span class="sidebar-title">Contact</span>
+        <span class="sidebar-title">CONTACT</span>
         <button class="sidebar-toggle" aria-label="Toggle contact info" aria-expanded="false">
           <i class="fa-solid fa-chevron-down"></i>
         </button>
@@ -44,7 +56,7 @@
               <a href="mailto:m.orabe@icloud.com"><i class="fa-solid fa-envelope"></i>m.orabe@icloud.com</a>
           </li>    
           <li>
-              <a href="https://orcid.org/my-orcid?orcid=0009-0004-7177-799X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i>0009-0004-7177-799X</a>
+              <a href="https://orcid.org/0009-0004-7177-799X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i>ORCID iD</a>
           </li>
           <li>
               <a href="https://github.com/orabe" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>orabe</a>
@@ -59,7 +71,7 @@
     <main>
       <div class="main-content">
         <section id="ventures-content">
-          <h2>Ventures</h2>          
+          <h2>VENTURES</h2>          
           <article id="venture-MathCodeLab">
             <h3><a href="http://www.MathCodeLab.de" target="_blank" rel="noopener noreferrer">MathCodeLab – Teaching Platform<i class="fa-solid fa-globe"></i></a></h3>
             <p class="entry-details">Founder & Lead Instructor</p>
@@ -126,10 +138,6 @@
         </section>
       </div>
     </main>
-
-    <footer>
-      <p>&copy; 2025 Mohammad Orabe</p>
-    </footer>
     
     <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
     <script>

@@ -4,16 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohammad Orabe | Home</title>
+  
+  <!-- Preconnect to external domains for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Prefetch critical navigation pages -->
+  <link rel="prefetch" href="pages/cv.html">
+  <link rel="prefetch" href="pages/tutorials.html">
+  <link rel="prefetch" href="pages/courses.html">
+  <link rel="prefetch" href="pages/publications.html">
+  <link rel="prefetch" href="pages/ventures.html">
+  
+  <!-- Load critical CSS inline or with high priority -->
   <link rel="stylesheet" href="assets/css/style.css" />
+  
+  <!-- Load fonts with optimized display -->
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Load Font Awesome with deferred loading -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 </head>
 <body class="has-sidebar">
   <div class="container">
     <header class="page-header">
       <nav>
         <div class="nav-header">
-          <span class="nav-title">Menu</span>
+          <span class="nav-title">MENU</span>
           <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
             <i class="fa-solid fa-chevron-down"></i>
           </button>
@@ -31,7 +50,7 @@
 
     <aside class="sidebar">
       <div class="sidebar-header">
-        <span class="sidebar-title">Contact</span>
+        <span class="sidebar-title">CONTACT</span>
         <button class="sidebar-toggle" aria-label="Toggle contact info" aria-expanded="false">
           <i class="fa-solid fa-chevron-down"></i>
         </button>
@@ -44,7 +63,7 @@
               <a href="mailto:m.orabe@icloud.com"><i class="fa-solid fa-envelope"></i>m.orabe@icloud.com</a>
           </li>    
           <li>
-              <a href="https://orcid.org/my-orcid?orcid=0009-0004-7177-799X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i>0009-0004-7177-799X</a>
+              <a href="https://orcid.org/0009-0004-7177-799X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid"></i>ORCID iD</a>
           </li>
           <li>
               <a href="https://github.com/orabe" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>orabe</a>
@@ -59,7 +78,7 @@
     <main>
       <div class="main-content">
         <section id="about-me">
-          <h2>About Me</h2>
+          <h2>ABOUT ME</h2>
           <p>I'm a machine learning researcher with a deep interest in computational neuroscience and neurotechnology. My work lies at the intersection of signal processing, brain-computer interfaces, and applied deep learning. I’m currently pursuing an M.Sc. in Computer Science at TU Berlin, where I focus on developing real-time gait classification systems using multimodal biosignals to support adaptive deep brain stimulation in Parkinson’s Disease.</p>
           <p>Over the past years, I’ve contributed to research on brain source imaging, neural signal analysis, and behavioral neuroscience—building tools that bridge data science with experimental neurobiology. I have worked closely with the Quality in Artificial Intelligence Group at PTB and Charité, where I developed toolboxes for electrophysiological data analysis and contributed to many open-source projects.</p>
           
@@ -69,7 +88,7 @@
         </section>
 
         <section id="skills">
-          <h2>Skills</h2>
+          <h2>TECHNICAL SKILLS</h2>
           <ul>
             <li><strong>Programming Languages:</strong> Python, R, Julia, MATLAB, Java, C/C++, Haskell, TypeScript</li>
             
@@ -92,7 +111,7 @@
         </section>
 
         <section id="interests">
-          <h2>Interests</h2>
+          <h2>INTERESTS</h2>
           <div class="tag-container">
             <span class="tag">Brain Computer Interfacing (BCI)</span>
             <span class="tag">Computer Vision</span>
@@ -110,10 +129,6 @@
         </section>
       </div>
     </main>
-
-    <footer>
-      <p>&copy; 2025 Mohammad Orabe</p>
-    </footer>
 
     <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
